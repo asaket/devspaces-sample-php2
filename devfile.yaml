@@ -1,0 +1,16 @@
+schemaVersion: 2.3.0
+metadata:
+  name: devspaces-sample-php2
+projects:
+  - name: devspaces-sample-php2
+    git:
+      remotes:
+        origin: https://github.com/asaket/devspaces-sample-php2.git
+components:
+  - name: tools
+    container:
+      image: registry.redhat.io/devspaces/udi-rhel9@sha256:c87671e98e55c7f5a32f1ee5a44138b9aa742acc723316cd2070bb9880eea8a3
+      cpuRequest: '100m'
+      memoryRequest: '512Mi'
+      cpuLimit: '4000m'
+      memoryLimit: '16Gi'
